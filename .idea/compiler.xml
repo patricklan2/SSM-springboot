@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springmcmvc-01" />
+        <module name="SSM-02" />
+        <module name="SSM-01" />
         <module name="baseModual" />
       </profile>
     </annotationProcessing>

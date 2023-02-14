@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.lan.mapper.AccountMapper">
+  <resultMap id="BaseResultMap" type="org.lan.pojo.Account">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="balance" jdbcType="INTEGER" property="balance" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from account
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.lan.pojo.Account">
+    insert into account (id, balance)
+    values (#{id,jdbcType=VARCHAR}, #{balance,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.lan.pojo.Account">
+    update account
+    set balance = #{balance,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, balance
+    from account
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, balance
+    from account
+  </select>
+</mapper>
