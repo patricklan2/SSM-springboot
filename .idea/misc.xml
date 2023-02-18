@@ -3,6 +3,8 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/baseModual" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot01" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot02" />
     <file type="web" url="file://$PROJECT_DIR$/springmcmvc-01" />
     <file type="web" url="file://$PROJECT_DIR$/SSM-01" />
     <file type="web" url="file://$PROJECT_DIR$/SSM-02" />
@@ -15,6 +17,8 @@
         <option value="$PROJECT_DIR$/springmcmvc-01/pom.xml" />
         <option value="$PROJECT_DIR$/SSM-01/pom.xml" />
         <option value="$PROJECT_DIR$/SSM-02/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot01/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot02/pom.xml" />
       </list>
     </option>
   </component>

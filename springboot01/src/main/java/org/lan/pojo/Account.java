@@ -21,6 +21,11 @@ public class Account {
         this.balance = balance;
     }
 
+    public Account(String id, Integer balance) {
+        this.id = id;
+        this.balance = balance;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
